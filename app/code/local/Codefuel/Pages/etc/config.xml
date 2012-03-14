@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+	
+	<modules>
+		<Codefuel_Pages>
+			<version>0.1</version>
+			<platform>ce</platform>
+		</Codefuel_Pages>
+	</modules>
+	
+	<frontend>
+		<layout>
+			<updates>
+				<codefuel_pages>
+					<file>codefuel/pages.xml</file>
+				</codefuel_pages>
+			</updates>
+		</layout>
+	</frontend>
+	
+	<page>
+		<layouts>
+			<homepage module="page" translate="label">
+				<label>Home page</label>
+				<template>page/homepage.phtml</template>
+				<layout_handle>page_homepage</layout_handle>
+			</homepage>
+			<static_page module="page" translate="label">
+				<label>Static</label>
+				<template>page/static.phtml</template>
+				<layout_handle>page_static</layout_handle>
+			</static_page>
+			<product_page module="page" translate="label">
+				<label>Product</label>
+				<template>page/product.phtml</template>
+				<layout_handle>page_product</layout_handle>
+			</product_page>
+			<static_page module="page" translate="label">
+				<label>Static Page</label>
+				<template>page/static.phtml</template>
+				<layout_handle>page_static</layout_handle>
+			</static_page>
+		</layouts>
+	</page>
+	
+</config>

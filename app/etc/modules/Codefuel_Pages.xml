@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Codefuel_Pages>
+			<active>true</active>
+			<codePool>local</codePool>	
+		</Codefuel_Pages>
+	</modules>
+</config>
