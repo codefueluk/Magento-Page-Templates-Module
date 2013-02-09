@@ -1,39 +1,50 @@
 <?xml version="1.0"?>
-<layout version="1.0">
-	
-	<cms_index_index>
-		<reference name="root">
-			<action method="setTemplate">
-				<template>page/homepage.phtml</template>
-			</action>
-		</reference>
-		<reference name="content">
-			
-		</reference>
-	</cms_index_index>
-	
-	<catalog_product_view>
-		<reference name="root">
-			<action method="setTemplate">
-				<template>page/product.phtml</template>
-			</action>
-		</reference>
-	</catalog_product_view>
-	
-	<catalog_category_view>
-		<reference name="root">
-			<action method="setTemplate">
-				<template>page/category.phtml</template>
-			</action>
-		</reference>
-	</catalog_category_view>
-	
-	<catalog_category_view>
-		<reference name="root">
-			<action method="setTemplate">
-				<template>page/static.phtml</template>
-			</action>
-		</reference>
-	</catalog_category_view>
-	
+<layout>
+    <default>
+
+        <!-- <remove name="left.permanent.callout" /> -->			<!--the dog-->
+        <!-- <remove name="right.permanent.callout" /> -->			<!--back to school-->
+        <!-- <remove name="catalog.compare.sidebar" /> -->			<!--product compare-->
+        <!-- <remove name="paypal.partner.right.logo" /> -->		<!--paypal logo-->
+        <!-- <remove name="cart_sidebar" /> -->						<!--cart sidebar-->
+        <!-- <remove name="left.reports.product.viewed" /> -->		<!--recently viewed prod-->
+        <!-- <remove name="right.reports.product.viewed" /> -->		<!--recently viewed prod-->
+        <!-- <remove name="right.reports.product.compared" /> -->	<!--recently compared prod-->
+        <!-- <remove name="right.poll" /> -->
+		
+    </default>
+
+    <cms_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/homepage.phtml</template>
+            </action>
+            <action method="addBodyClass">
+                <className>page-home</className>
+            </action>
+        </reference>
+    </cms_index_index>
+
+    <catalog_product_view>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/product.phtml</template>
+            </action>
+            <action method="addBodyClass">
+                <className>product-page</className>
+            </action>
+        </reference>
+    </catalog_product_view>
+
+    <catalog_category_view>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/category.phtml</template>
+            </action>
+			<action method="addBodyClass">
+                <className>category-page</className>
+            </action>
+        </reference>
+    </catalog_category_view>
+
 </layout>

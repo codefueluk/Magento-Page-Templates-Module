@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <config>
-	
+
 	<modules>
 		<Codefuel_Pages>
 			<version>0.1</version>
@@ -17,30 +17,31 @@
 			</updates>
 		</layout>
 	</frontend>
-	
-	<page>
-		<layouts>
-			<homepage module="page" translate="label">
-				<label>Home page</label>
-				<template>page/homepage.phtml</template>
-				<layout_handle>page_homepage</layout_handle>
-			</homepage>
-			<static_page module="page" translate="label">
-				<label>Static</label>
-				<template>page/static.phtml</template>
-				<layout_handle>page_static</layout_handle>
-			</static_page>
-			<product_page module="page" translate="label">
-				<label>Product</label>
-				<template>page/product.phtml</template>
-				<layout_handle>page_product</layout_handle>
-			</product_page>
-			<static_page module="page" translate="label">
-				<label>Static Page</label>
-				<template>page/static.phtml</template>
-				<layout_handle>page_static</layout_handle>
-			</static_page>
-		</layouts>
-	</page>
-	
+
+	<global>	
+		<page>
+			<layouts>
+				<homepage module="page" translate="label">
+					<label>Home page</label>
+					<template>page/homepage.phtml</template>
+					<layout_handle>page_homepage</layout_handle>
+				</homepage>
+				<product_page module="page" translate="label">
+					<label>Product</label>
+					<template>page/product.phtml</template>
+					<layout_handle>page_product</layout_handle>
+				</product_page>
+				<category module="page" translate="label">
+					<label>Category</label>
+					<template>page/category.phtml</template>
+					<layout_handle>page_category</layout_handle>
+				</category>
+				<static_page module="page" translate="label">
+					<label>Static Page</label>
+					<template>page/static.phtml</template>
+					<layout_handle>page_static</layout_handle>
+				</static_page>
+			</layouts>
+		</page>
+	</global>
 </config>

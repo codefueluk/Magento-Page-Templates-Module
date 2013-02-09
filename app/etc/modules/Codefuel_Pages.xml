@@ -3,7 +3,10 @@
 	<modules>
 		<Codefuel_Pages>
 			<active>true</active>
-			<codePool>local</codePool>	
+			<codePool>local</codePool>
+			<depends>
+				<Mage_Cms />
+			</depends>
 		</Codefuel_Pages>
 	</modules>
 </config>
