@@ -1,13 +1,9 @@
 Codefuel_Page
 =============
 
-Ever needed to have more page templates than your default 1column etc? This module comes with the ability to assign more than these default templates to the homepage, category, product and static pages. 
+Ever needed more page templates than your default 1column.phtml 2columns etc? This module comes with the ability to assign different templates. By default you can have a separate template for the home page, category, product, static page and contact. 
 
-1. Copy module files to your project
-2. Refresh the cache
-3. Go to the static pages in the admin area, edit Home page. Under Design change the layout dropdown to Home page
-
-The static pages, category and product will work straight away.
+You may also have a custom body class for each of these sections.
 
 Enjoy!
 
