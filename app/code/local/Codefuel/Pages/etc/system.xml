@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<codefuel_core translate="label" module="codefuel_pages">
+			<label>Codefuel Extenstions</label>
+			<sort_order>200</sort_order>
+		</codefuel_core>
+	</tabs>
+	<sections>
+		<codefuel_pages translate="label">
+			<label>Page Templates</label>
+			<tab>codefuel_core</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>100</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>Templates Assigned</label>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<homepage translate="label comment">
+							<label>Homepage Layout</label>
+							<frontend_type>select</frontend_type>                                                                     
+                        	<source_model>adminhtml/system_config_source_yesno</source_model>  
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Enable the use of homepage.phtml please make sure to change the layout of the home page under CMS > Pages too]]>
+							</comment>
+						</homepage>
+						<category translate="label comment">
+							<label>Category Layout</label>
+							<frontend_type>select</frontend_type>                                                                     
+                        	<source_model>adminhtml/system_config_source_yesno</source_model>  
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Enable the use of category.phtml]]>
+							</comment>
+						</category>
+						<product translate="label comment">
+							<label>Product Layout</label>
+							<frontend_type>select</frontend_type>                                                                     
+                        	<source_model>adminhtml/system_config_source_yesno</source_model>  
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Enable the use of homepage.phtml]]>
+							</comment>
+						</product>
+						<static translate="label comment">
+							<label>Static Page Layout</label>
+							<frontend_type>select</frontend_type>                                                                     
+                        	<source_model>adminhtml/system_config_source_yesno</source_model>  
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Enable the use of static.phtml]]>
+							</comment>
+						</static>
+						<contact translate="label comment">
+							<label>Contact Page Layout</label>
+							<frontend_type>select</frontend_type>                                                                     
+                        	<source_model>adminhtml/system_config_source_yesno</source_model>  
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Enable the use of contact.phtml]]>
+							</comment>
+						</contact>
+					</fields>
+				</general>
+				<classes>
+					<label>CSS Classes</label>
+					<sort_order>2</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<homepage translate="label comment">
+							<label>Homepage Class</label>
+							<frontend_type>text</frontend_type>                                                                     
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Add single class to home page]]>
+							</comment>
+						</homepage>
+						<category translate="label comment">
+							<label>Category Class</label>
+							<frontend_type>text</frontend_type>                                                                     
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Add single class to category page]]>
+							</comment>
+						</category>
+						<product translate="label comment">
+							<label>Product Class</label>
+							<frontend_type>text</frontend_type>                                                                     
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Add single class to product page]]>
+							</comment>
+						</product>
+						<static translate="label comment">
+							<label>Static Page Class</label>
+							<frontend_type>text</frontend_type>                                                                     
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Add single class to static page]]>
+							</comment>
+						</static>
+						<contact translate="label comment">
+							<label>Contact Page Class</label>
+							<frontend_type>text</frontend_type>                                                                     
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[Add single class to contact page]]>
+							</comment>
+						</contact>
+					</fields>
+				</classes>
+			</groups>
+		</codefuel_pages>
+	</sections>
+</config>

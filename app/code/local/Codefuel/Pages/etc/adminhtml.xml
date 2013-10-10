@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<config>                   
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<codefuel_pages>
+										<title>Codefuel Pages</title>
+										<sort_order>1</sort_order>
+									</codefuel_pages>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+		<!--
+		<resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <tools>
+                                <children>
+                                    <backup translate="title" module="backup">
+                                        <title>Backups</title>
+                                            <children>
+                                                <rollback translate="title" module="backup">
+                                                    <title>Rollback</title>
+                                                </rollback>
+                                            </children>
+                                    </backup>
+                                </children>
+                            </tools>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+	       -->
+</config>
+
+<!--
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<faq>
+						<title>Faq Module</title>
+						<sort_order>10</sort_order>
+					</faq>
+					<system>
+						<children>
+							<config>
+								<children>
+									<faq translate="title" module="faq">
+										<title>FAQ Module</title>
+										<sort_order>300</sort_order>
+									</faq>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+-->

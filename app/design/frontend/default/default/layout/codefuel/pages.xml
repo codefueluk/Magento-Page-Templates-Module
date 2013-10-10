@@ -10,41 +10,73 @@
         <!-- <remove name="left.reports.product.viewed" /> -->		<!--recently viewed prod-->
         <!-- <remove name="right.reports.product.viewed" /> -->		<!--recently viewed prod-->
         <!-- <remove name="right.reports.product.compared" /> -->	<!--recently compared prod-->
-        <!-- <remove name="right.poll" /> -->
+        <!-- <remove name="right.poll" /> -->		
 		
     </default>
 
     <cms_index_index>
         <reference name="root">
-            <action method="setTemplate">
+            <action method="setTemplate" ifconfig="codefuel_pages/general/homepage">
                 <template>page/homepage.phtml</template>
             </action>
             <action method="addBodyClass">
-                <className>page-home</className>
+                <className helper="codefuel_pages/data/addclass">
+                	<arg>homepage</arg>
+                </className>
             </action>
         </reference>
     </cms_index_index>
 
     <catalog_product_view>
         <reference name="root">
-            <action method="setTemplate">
+            <action method="setTemplate" ifconfig="codefuel_pages/general/product">
                 <template>page/product.phtml</template>
             </action>
             <action method="addBodyClass">
-                <className>product-page</className>
+                <className helper="codefuel_pages/data/addclass">
+                	<arg>product</arg>
+                </className>
             </action>
         </reference>
     </catalog_product_view>
 
     <catalog_category_view>
         <reference name="root">
-            <action method="setTemplate">
+            <action method="setTemplate" ifconfig="codefuel_pages/general/category">
                 <template>page/category.phtml</template>
             </action>
 			<action method="addBodyClass">
-                <className>category-page</className>
+                <className helper="codefuel_pages/data/addclass">
+                	<arg>category</arg>
+                </className>
             </action>
         </reference>
     </catalog_category_view>
+    
+    <cms_page_view>
+        <reference name="root">
+            <action method="setTemplate" ifconfig="codefuel_pages/general/static">
+                <template>page/category.phtml</template>
+            </action>
+			<action method="addBodyClass">
+                <className helper="codefuel_pages/data/addclass">
+                	<arg>static</arg>
+                </className>
+            </action>
+        </reference>
+    </cms_page_view>
+    
+    <contacts_index_index>
+        <reference name="root">
+            <action method="setTemplate" ifconfig="codefuel_pages/general/contact">
+                <template>page/contact.phtml</template>
+            </action>
+			<action method="addBodyClass">
+                <className helper="codefuel_pages/data/addclass">
+                	<arg>contact</arg>
+                </className>
+            </action>
+        </reference>
+    </contacts_index_index>
 
 </layout>

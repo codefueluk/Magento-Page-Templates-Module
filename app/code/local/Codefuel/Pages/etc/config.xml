@@ -3,11 +3,10 @@
 
 	<modules>
 		<Codefuel_Pages>
-			<version>0.1</version>
+			<version>1.0.0</version>
 			<platform>ce</platform>
 		</Codefuel_Pages>
 	</modules>
-	
 	<frontend>
 		<layout>
 			<updates>
@@ -17,8 +16,12 @@
 			</updates>
 		</layout>
 	</frontend>
-
-	<global>	
+	<global>
+		<helpers>
+			<codefuel_pages>
+				<class>Codefuel_Pages_Helper</class>
+			</codefuel_pages>
+		</helpers>
 		<page>
 			<layouts>
 				<homepage module="page" translate="label">
@@ -36,12 +39,35 @@
 					<template>page/category.phtml</template>
 					<layout_handle>page_category</layout_handle>
 				</category>
-				<static_page module="page" translate="label">
+				<static module="page" translate="label">
 					<label>Static Page</label>
 					<template>page/static.phtml</template>
 					<layout_handle>page_static</layout_handle>
-				</static_page>
+				</static>
+				<contact module="page" translate="label">
+					<label>Contact Page</label>
+					<template>page/contact.phtml</template>
+					<layout_handle>contact</layout_handle>
+				</contact>
 			</layouts>
 		</page>
 	</global>
+	<default>
+		<codefuel_pages>
+			<general>
+				<homepage>1</homepage>
+				<category>1</category>
+				<product>1</product>
+				<static>1</static>
+				<contact>1</contact>
+			</general>
+			<classes>
+				<homepage>home-page</homepage>
+				<category>category-page</category>
+				<product>product-page</product>
+				<static>static-page</static>
+				<contact>contact-page</contact>
+			</classes>
+		</codefuel_pages>
+	</default>
 </config>
